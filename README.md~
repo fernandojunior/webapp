@@ -62,8 +62,15 @@ Basicamente Yeoman é um gerador de estruturas para aplicações web. Nesse [lin
 ```sh
 # yo - the scaffolding tool from Yeoman
 npm install -g yo
+
+yo --version
+# 1.4.7
 ```
 
 **Referência** GETTING STARTED WITH YEOMAN [link](http://yeoman.io/learning/index.html)
 
+## Gerenciador de dependências (frontend)
 
+```sh
+npm install -g bower
+```

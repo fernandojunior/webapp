@@ -69,4 +69,11 @@ yo --version
 
 **Referência** GETTING STARTED WITH YEOMAN [link](http://yeoman.io/learning/index.html)
 
+## Gerenciador de dependências (frontend)
 
+```sh
+npm install -g bower
+
+bower --version
+# 1.4.1
+```
