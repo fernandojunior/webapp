@@ -12,14 +12,14 @@ sudo apt-get install sublime-text
 
 ## Instalação do Node.js
 
-*Verificar se existe algum pacote do node instalado no SO*
+Verificar se existe algum pacote do node instalado no SO
 ```sh
 dpkg --get-selections | grep node
 ```
 
 Caso não tenha, instalar umas das versões a seguir.
 
-*versão 0.10.x*
+Versão 0.10.x:
 ```sh
 sudo apt-get install curl
 
@@ -35,7 +35,7 @@ nodejs -v
 
 ```
 
-*versão 0.12.x*
+Versão 0.12.x:
 ```sh
 sudo apt-get install curl
 
@@ -67,7 +67,9 @@ yo --version
 # 1.4.7
 ```
 
-**Referência** GETTING STARTED WITH YEOMAN [link](http://yeoman.io/learning/index.html)
+**Referência** 
+
+* GETTING STARTED WITH YEOMAN [link](http://yeoman.io/learning/index.html)
 
 ## Gerenciador de dependências (frontend)
 
@@ -77,3 +79,7 @@ npm install -g bower
 bower --version
 # 1.4.1
 ```
+
+**Referência**
+
+* Install Bower [link](http://bower.io/#install-bower)
