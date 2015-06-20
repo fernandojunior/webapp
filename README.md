@@ -51,7 +51,15 @@ nodejs -v
 
 ```
 
-The npm package manager is bundled with Node, although you might need to update it. Some Node versions ship with rather old versions of npm. You can update npm using this command:
+Para instalar o node (varias versoes em uma mesma maquina) sem precisar do usuário root:
+```sh
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+nvm install 0.10 # instala versao 0.10
+nvm install stable # instala versao estavel: 0.12
+nvm use stable # configura o terminal para utiizar versao estavel..
+```
+
+Atualiza o npm
 
 ```sh
 sudo npm install --global npm@latest
@@ -61,6 +69,7 @@ sudo npm install --global npm@latest
 
 * How To Install Node.js on an Ubuntu 14.04 server [link](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server)
 * Node.js v0.12, io.js, and the NodeSource Linux Repositories [link](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories)
+* Node Version Manager [link](https://github.com/creationix/nvm)
 
 ## Instalação do Yeoman
 Basicamente Yeoman é um gerador de estruturas para aplicações web. Nesse [link](http://yeoman.io/generators/) tem uma serie de estruturas...
@@ -134,6 +143,14 @@ Caso algum erro de permissão ou acesso apareça, como EPERM, EACCESS, não util
 ```sh
 ./npm-g-nosudo.sh
 ```
+
+Ou:
+
+* http://askubuntu.com/questions/507684/trying-to-install-yeoman-on-ubuntu-to-use-with-nodejs-and-npm
+
+Ou:
+
+* https://github.com/creationix/nvm
 
 ## Inspirações
 
