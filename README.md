@@ -57,6 +57,7 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | 
 nvm install 0.10 # instala versao 0.10
 nvm install stable # instala versao estavel: 0.12
 nvm use stable # configura o terminal para utiizar versao estavel..
+node --version # ou: nvm run stable --version
 ```
 
 Atualiza o npm
