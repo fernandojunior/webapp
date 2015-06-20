@@ -119,6 +119,12 @@ yo angular
 
 ```
 
+Após criar a estrutura, execute o comando a seguir para iniciar um servidor simples para a aplicação. Default url: http://localhost:9000/#/
+
+```sh
+grunt serve
+```
+
 * Tutorial [link](http://yeoman.io/codelab/install-generators.html)
 
 ## Erros de permissão/acesso
