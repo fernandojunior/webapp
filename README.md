@@ -135,7 +135,30 @@ Após criar a estrutura, execute o comando a seguir para iniciar um servidor sim
 grunt serve
 ```
 
+Caso o estilo da pagina não apareça, no arquivo app/index.html, entre os comentários <!-- bower:css --> e <!-- endbower -->, adicionar a seguinte linha:
+
+```html
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+```
+
 * Tutorial [link](http://yeoman.io/codelab/install-generators.html)
+
+## Instalando o UI Bootstrap
+
+```sh
+bower install angular-bootstrap
+```
+
+Adicionando a dependência no projeto
+
+```js
+angular.module('myModule', ['ui.bootstrap']);
+```
+
+**Referências**
+
+* How to use bootstrap and angular [link](https://scotch.io/tutorials/how-to-correctly-use-bootstrapjs-and-angularjs-together)
+* Getting started [link](http://angular-ui.github.io/bootstrap/)
 
 ## Erros de permissão/acesso
 
@@ -148,9 +171,7 @@ Caso algum erro de permissão ou acesso apareça, como EPERM, EACCESS, não util
 Ou:
 
 * http://askubuntu.com/questions/507684/trying-to-install-yeoman-on-ubuntu-to-use-with-nodejs-and-npm
-
-Ou:
-
+* http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo
 * https://github.com/creationix/nvm
 
 ## Inspirações

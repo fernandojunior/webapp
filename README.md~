@@ -51,7 +51,16 @@ nodejs -v
 
 ```
 
-The npm package manager is bundled with Node, although you might need to update it. Some Node versions ship with rather old versions of npm. You can update npm using this command:
+Para instalar o node (varias versoes em uma mesma maquina) sem precisar do usuário root:
+```sh
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+nvm install 0.10 # instala versao 0.10
+nvm install stable # instala versao estavel: 0.12
+nvm use stable # configura o terminal para utiizar versao estavel..
+node --version # ou: nvm run stable --version
+```
+
+Atualiza o npm
 
 ```sh
 sudo npm install --global npm@latest
@@ -61,6 +70,7 @@ sudo npm install --global npm@latest
 
 * How To Install Node.js on an Ubuntu 14.04 server [link](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server)
 * Node.js v0.12, io.js, and the NodeSource Linux Repositories [link](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories)
+* Node Version Manager [link](https://github.com/creationix/nvm)
 
 ## Instalação do Yeoman
 Basicamente Yeoman é um gerador de estruturas para aplicações web. Nesse [link](http://yeoman.io/generators/) tem uma serie de estruturas...
@@ -115,11 +125,40 @@ mkdir my-yo-project
 cd my-yo-project
 
 # generating 
-yo webapp
+yo angular
 
 ```
 
+Após criar a estrutura, execute o comando a seguir para iniciar um servidor simples para a aplicação. Default url: http://localhost:9000/#/
+
+```sh
+grunt serve
+```
+
+Caso o estilo da pagina não apareça, no arquivo app/index.html, entre os comentários <!-- bower:css --> e <!-- endbower -->, adicionar a seguinte linha:
+
+```html
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+```
+
 * Tutorial [link](http://yeoman.io/codelab/install-generators.html)
+
+## Instalando o UI Bootstrap
+
+```sh
+bower install angular-bootstrap
+```
+
+Adicionando a dependência no projeto
+
+```js
+angular.module('myModule', ['ui.bootstrap']);
+```
+
+**Referências**
+
+* How to use bootstrap and angular [link](https://scotch.io/tutorials/how-to-correctly-use-bootstrapjs-and-angularjs-together)
+* 
 
 ## Erros de permissão/acesso
 
@@ -128,6 +167,12 @@ Caso algum erro de permissão ou acesso apareça, como EPERM, EACCESS, não util
 ```sh
 ./npm-g-nosudo.sh
 ```
+
+Ou:
+
+* http://askubuntu.com/questions/507684/trying-to-install-yeoman-on-ubuntu-to-use-with-nodejs-and-npm
+* http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo
+* https://github.com/creationix/nvm
 
 ## Inspirações
 
