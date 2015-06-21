@@ -149,7 +149,9 @@ Caso o estilo da pagina não apareça, no arquivo app/index.html, entre os comen
 bower install angular-bootstrap
 ```
 
-Adicionando a dependência no projeto
+Em seguida, incluir um dos arquivos baixados na página HTML. Usar ui-bootstrap-tpls.min.js.
+
+Adicionando a dependência no projeto.
 
 ```js
 angular.module('myModule', ['ui.bootstrap']);
@@ -159,6 +161,31 @@ angular.module('myModule', ['ui.bootstrap']);
 
 * How to use bootstrap and angular [link](https://scotch.io/tutorials/how-to-correctly-use-bootstrapjs-and-angularjs-together)
 * Getting started [link](http://angular-ui.github.io/bootstrap/)
+* https://github.com/angular-ui/bootstrap/issues/1936
+
+## Font Awesome
+
+```js
+bower install components-font-awesome
+```
+
+<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" type="text/css">
+
+**Referência** 
+
+* https://github.com/components/font-awesome
+
+## Animate.css
+
+**Referência** 
+
+```js
+bower install animate.css
+```
+
+<link rel="stylesheet" href="bower_components/animate.css/animate.css">
+
+* http://www.jvandemo.com/how-to-create-cool-animations-with-angularjs-1-2-and-animate-css/
 
 ## Erros de permissão/acesso
 
@@ -180,3 +207,4 @@ Ou:
 * [Startbootstrap](http://startbootstrap.com/template-categories/one-page/)
 * [Colourlovers](http://www.colourlovers.com/palletes)
 * [Dribbble](http://dribbble.com)
+* http://angularjs4u.com/ui/top-angularjs-ui-frameworks/
