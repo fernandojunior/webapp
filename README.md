@@ -208,6 +208,8 @@ Ou:
 * [Bootstrapzero](http://www.bootstrapzero.com/)
 * [blacktie](http://blacktie.co/)
 * [free-bootstrap-templates](https://www.freshdesignweb.com/free-bootstrap-templates/)
+* [free-bootstrap-3-templates](http://speckyboy.com/2014/05/27/free-bootstrap-3-templates/)
+* [shapebootstrap](https://shapebootstrap.net)
 * [Colourlovers](http://www.colourlovers.com/palletes)
 * [Dribbble](http://dribbble.com)
 * http://angularjs4u.com/ui/top-angularjs-ui-frameworks/
