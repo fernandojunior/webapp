@@ -8,16 +8,18 @@ sudo apt-get update
 sudo apt-get install sublime-text
 ```
 
-**Referência** How do I install Sublime Text 2/3? [link](http://askubuntu.com/questions/172698/how-do-i-install-sublime-text-2-3)
+**Referências**
+
+* [How do I install Sublime Text 2/3?](http://askubuntu.com/questions/172698/how-do-i-install-sublime-text-2-3)
 
 ## Instalação do Node.js
 
-Verificar se existe algum pacote do node instalado no SO
+Verifique se tem algum pacote do node instalado no SO
 ```sh
 dpkg --get-selections | grep node
 ```
 
-Caso não tenha, instalar umas das versões a seguir.
+Caso não tenha, instale umas das versões a seguir.
 
 Versão 0.10.x:
 ```sh
@@ -51,7 +53,8 @@ nodejs -v
 
 ```
 
-Para instalar o node (varias versoes em uma mesma maquina) sem precisar do usuário root:
+Para instalar o node (várias versões em uma mesma máquina) sem precisar do
+usuário root, faça o seguinte:
 ```sh
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 nvm install 0.10 # instala versao 0.10
@@ -60,21 +63,23 @@ nvm use stable # configura o terminal para utiizar versao estavel..
 node --version # ou: nvm run stable --version
 ```
 
-Atualiza o npm
+Atualize o npm
 
 ```sh
 sudo npm install --global npm@latest
 ```
 
-**Referência** 
+**Referências**
 
-* How To Install Node.js on an Ubuntu 14.04 server [link](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server)
-* Node.js v0.12, io.js, and the NodeSource Linux Repositories [link](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories)
-* Node Version Manager [link](https://github.com/creationix/nvm)
+* [How To Install Node.js on an Ubuntu 14.04 server](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server)
+* [Node.js v0.12, io.js, and the NodeSource Linux Repositories](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories)
+* [Node Version Manager](https://github.com/creationix/nvm)
 
 ## Instalação do Yeoman
-Basicamente Yeoman é um gerador de estruturas para aplicações web. Nesse [link](http://yeoman.io/generators/) tem uma serie de estruturas...
 
+Basicamente, Yeoman é um gerador de estruturas para aplicações web. Nesse [link](http://yeoman.io/generators/) tem vários geradores.
+
+Para instalar o Yeoman, faça:
 ```sh
 # yo - the scaffolding tool from Yeoman
 sudo npm install -g yo
@@ -83,9 +88,9 @@ yo --version
 # 1.4.7
 ```
 
-**Referência** 
+**Referências**
 
-* GETTING STARTED WITH YEOMAN [link](http://yeoman.io/learning/index.html)
+* [Getting started with yeoman](http://yeoman.io/learning/index.html)
 
 ## Gerenciador de dependências (frontend)
 
@@ -96,9 +101,9 @@ bower --version
 # 1.4.1
 ```
 
-**Referência**
+**Referências**
 
-* Install Bower [link](http://bower.io/#install-bower)
+* [Install Bower](http://bower.io/#install-bower)
 
 ## Gerenciador de tarefas (preview, test, build)
 
@@ -109,10 +114,9 @@ grunt --version
 # grunt-cli v0.1.13
 ```
 
+**Referências**
 
-**Referência** 
-
-* GETTING STARTED [link](http://gruntjs.com/getting-started)
+* [Gruntjs - Getting started](http://gruntjs.com/getting-started)
 
 ## Gerando uma aplicação Web com AngularJS
 
@@ -124,24 +128,29 @@ sudo npm install --global generator-angular@0.11.1
 mkdir my-yo-project
 cd my-yo-project
 
-# generating 
+# generating
 yo angular
 
 ```
 
-Após criar a estrutura, execute o comando a seguir para iniciar um servidor simples para a aplicação. Default url: http://localhost:9000/#/
+Após gerar a estrutura, execute o comando a seguir para iniciar um servidor
+simples para a aplicação.
 
 ```sh
 grunt serve
+# acesse: http://localhost:9000/#/
 ```
 
-Caso o estilo da pagina não apareça, no arquivo app/index.html, entre os comentários <!-- bower:css --> e <!-- endbower -->, adicionar a seguinte linha:
+Caso o estilo da página não apareça, no arquivo app/index.html, entre os
+comentários <!-- bower:css --> e <!-- endbower -->, adicione a seguinte linha:
 
 ```html
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
 ```
 
-* Tutorial [link](http://yeoman.io/codelab/install-generators.html)
+**Referências**
+
+* [Yeoman - Tutorial](http://yeoman.io/codelab/install-generators.html)
 
 ## Instalando o UI Bootstrap
 
@@ -149,7 +158,7 @@ Caso o estilo da pagina não apareça, no arquivo app/index.html, entre os comen
 bower install angular-bootstrap
 ```
 
-Em seguida, incluir um dos arquivos baixados na página HTML. Usar ui-bootstrap-tpls.min.js.
+Em seguida, inclua um dos arquivos baixados na página HTML. Usar ui-bootstrap-tpls.min.js.
 
 Adicionando a dependência no projeto.
 
@@ -157,10 +166,12 @@ Adicionando a dependência no projeto.
 angular.module('myModule', ['ui.bootstrap']);
 ```
 
+
 **Referências**
 
-* How to use bootstrap and angular [link](https://scotch.io/tutorials/how-to-correctly-use-bootstrapjs-and-angularjs-together)
-* Getting started [link](http://angular-ui.github.io/bootstrap/)
+* [Angular UI - Getting started](http://angular-ui.github.io/bootstrap/)
+* [AngularJS UI Frameworks](http://angularjs4u.com/ui/top-angularjs-ui-frameworks/)
+* [How to use bootstrap and angular](https://scotch.io/tutorials/how-to-correctly-use-bootstrapjs-and-angularjs-together)
 * https://github.com/angular-ui/bootstrap/issues/1936
 
 ## Font Awesome
@@ -171,45 +182,49 @@ bower install components-font-awesome
 
 <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" type="text/css">
 
-**Referência** 
+**Referências**
 
-* https://github.com/components/font-awesome
+* [Font awesome](https://github.com/components/font-awesome)
 
 ## Animate.css
-
-**Referência** 
 
 ```js
 bower install animate.css
 ```
 
+```html
 <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+```
+
+**Referências**
 
 * http://www.jvandemo.com/how-to-create-cool-animations-with-angularjs-1-2-and-animate-css/
 
 ## Erros de permissão/acesso
 
-Caso algum erro de permissão ou acesso apareça, como EPERM, EACCESS, não utilize o sudo como workaround. Ver esse [guia](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
+Caso algum erro de permissão ou acesso apareça, como EPERM, EACCESS, não
+utilize o sudo como workaround. Utilize:
 
 ```sh
 ./npm-g-nosudo.sh
 ```
 
-Ou:
+**Referências**
 
+* [NPM global without sudo](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
 * http://askubuntu.com/questions/507684/trying-to-install-yeoman-on-ubuntu-to-use-with-nodejs-and-npm
 * http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo
 * https://github.com/creationix/nvm
 
-## Inspirações
+## Outras perfumarias
 
-* [Themeforest](http://themeforest.net/search?utf8=%E2%9C%93&term=&view=list&sort=&date=&category=site-templates&price_min=&price_max=&sales=rank-4&rating_min=)
-* [Startbootstrap](http://startbootstrap.com/template-categories/one-page/)
+* [Blacktie](http://blacktie.co/)
 * [Bootstrapzero](http://www.bootstrapzero.com/)
-* [blacktie](http://blacktie.co/)
-* [free-bootstrap-templates](https://www.freshdesignweb.com/free-bootstrap-templates/)
-* [free-bootstrap-3-templates](http://speckyboy.com/2014/05/27/free-bootstrap-3-templates/)
-* [shapebootstrap](https://shapebootstrap.net)
 * [Colourlovers](http://www.colourlovers.com/palletes)
 * [Dribbble](http://dribbble.com)
-* http://angularjs4u.com/ui/top-angularjs-ui-frameworks/
+* [Free bootstrap templates](https://www.freshdesignweb.com/free-bootstrap-templates/)
+* [Free bootstrap 3 templates](http://speckyboy.com/2014/05/27/free-bootstrap-3-templates/)
+* [Templated](http://templated.co/)
+* [Themeforest](http://themeforest.net/search?utf8=%E2%9C%93&term=&view=list&sort=&date=&category=site-templates&price_min=&price_max=&sales=rank-4&rating_min=)
+* [Shapebootstrap](https://shapebootstrap.net)
+* [Startbootstrap](http://startbootstrap.com/template-categories/one-page/)
