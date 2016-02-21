@@ -69,11 +69,21 @@ Atualize o npm
 sudo npm install --global npm@latest
 ```
 
+Caso algum erro de permissão ou acesso apareça, como EPERM, EACCESS, não
+utilize o sudo como workaround. Utilize:
+
+```sh
+./npm-g-nosudo.sh
+```
+
 **Referências**
 
 * [How To Install Node.js on an Ubuntu 14.04 server](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server)
 * [Node.js v0.12, io.js, and the NodeSource Linux Repositories](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories)
 * [Node Version Manager](https://github.com/creationix/nvm)
+* [NPM global without sudo](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
+* http://askubuntu.com/questions/507684/trying-to-install-yeoman-on-ubuntu-to-use-with-nodejs-and-npm
+* http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo
 
 ## Instalação do Yeoman
 
@@ -201,20 +211,6 @@ bower install animate.css
 * http://www.jvandemo.com/how-to-create-cool-animations-with-angularjs-1-2-and-animate-css/
 
 ## Erros de permissão/acesso
-
-Caso algum erro de permissão ou acesso apareça, como EPERM, EACCESS, não
-utilize o sudo como workaround. Utilize:
-
-```sh
-./npm-g-nosudo.sh
-```
-
-**Referências**
-
-* [NPM global without sudo](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
-* http://askubuntu.com/questions/507684/trying-to-install-yeoman-on-ubuntu-to-use-with-nodejs-and-npm
-* http://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo
-* https://github.com/creationix/nvm
 
 ## Outras perfumarias
 
