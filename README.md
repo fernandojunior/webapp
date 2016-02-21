@@ -210,8 +210,6 @@ bower install animate.css
 
 * http://www.jvandemo.com/how-to-create-cool-animations-with-angularjs-1-2-and-animate-css/
 
-## Erros de permissão/acesso
-
 ## Outras perfumarias
 
 * [Blacktie](http://blacktie.co/)
