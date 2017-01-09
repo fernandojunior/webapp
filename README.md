@@ -56,7 +56,12 @@ nodejs -v
 Para instalar o node (várias versões em uma mesma máquina) sem precisar do
 usuário root, faça o seguinte:
 ```sh
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+nvm install node # instala ultima versao
 nvm install 0.10 # instala versao 0.10
 nvm install stable # instala versao estavel: 0.12
 nvm use stable # configura o terminal para utiizar versao estavel..
